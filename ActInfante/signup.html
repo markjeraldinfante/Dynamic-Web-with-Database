@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <section id="signup">
+        <header class="masthead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                        <div class="card border-0 shadow rounded-3 my-5">
+                            <div class="card-body p-4 p-sm-5">
+                                <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
+                                <form action="process.php" method="post" novalidate>
+                                    <div class="d-flex ">
+                                        <div class="flex-fill form-floating mb-3 firstcol">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="First Name" name="first_name">
+                                            <label for="floatingInput">First Name</label>
+                                        </div>
+                                        <div class="flex-fill form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="Last Name" name="last_name">
+                                            <label for="floatingInput">Last Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex ">
+                                        <div class="flex-fill form-floating mb-3 firstcol">
+
+                                            <select class="form-control" id="floatingInput" name="gender" id="gender"
+                                                name="gender">
+                                                <option value="" selected disabled hidden></option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="rather not say">Rather not say</option>
+                                            </select>
+                                            <label for="floatingInput">Gender</label>
+                                        </div>
+                                        <div class="flex-fill form-floating date mb-3">
+                                            <input type="date" class="form-control" id="floatingInput"
+                                                placeholder="March 4, 2000" name="birth_date">
+                                            <label for="floatingInput">Birth Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com" name="email">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password" name="password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password" name="password_confirmation">
+                                        <label for="floatingPassword">Confirm Password</label>
+                                    </div>
+
+                                    
+
+                                    <div class="d-grid">
+                                        <button class="btn btn-signup btn-primary btn-login text-uppercase fw-bold"
+                                            type="submit" name="add_account">Create Account</button>
+                                    </div>
+                                    <hr class="my-4">
+                                    <h6 class="text-center form-label">Have an account?</h6>
+                                    <div class="d-grid">
+                                        <button onclick="location.href='signin.php'"
+                                            class="btn btn-signin btn-primary btn-login text-uppercase fw-bold"
+                                            type="button">Sign In</button>
+
+                                </form>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </header>
+
+    </section>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
